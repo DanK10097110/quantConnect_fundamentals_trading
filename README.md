@@ -1,2 +1,6 @@
-# quantConnect_fundamentals_trading
-This repo is for a risk averse fundamentals trading system devoloped on quantconnect for a quantitative finance club competition
+The associated code is a quantitative trading brain child of mine that I have spent many hours thinking about and developing.
+It was also used in a Rutgers University Quantitative Finance Competition sponsored by SIG and allowed my team and I to become finalists.
+
+The general idea of the algorithm is to utilize machine learning models trained upon quarterly and yearly(unusual, I know) financial statements and their resulting price changes to create prediction of the price change over the next quarter. If the prediction is significant enough, the company is added to a running list of companies on a "watch list". If a company on the watch list strays far enough from the predicted course(2 standard devs) the algorithm predicts a reversion to the expected trend. The farther away from the expectation it is, the more allocation the company recieves until a predetermined stop loss point.
+
+Note: The below code works only on a platform called Quant Connect which is a very useful tool that allows quantitative finance developers to access vast amounts of data and a useful platform to test and implement code. Given this, some code may be hard to follow as it utilizes the unique yet useful syntax native to the platform.
